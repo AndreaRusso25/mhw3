@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mubi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="mhw3.css">
+        <script src="mhw3.js" defer></script>
+    
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Krona+One&family=Ramabhadra&family=Spline+Sans+Mono:ital,wght@0,300..700;1,300..700&family=Yantramanav:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <span class="material-symbols-outlined" id="top_menu_icon_left">
+                    menu
+                </span>
+                <span id="nav_logo"></span>
+                <form>
+                    <span class="cerca">
+                        <span class="material-symbols-outlined">
+                            search
+                        </span>
+                        <input type="search" placeholder="CERCA" id="cerca">
+                        </input>
+                        <div class = "cerca_risultati">
+                            <div class = "no_film">
+                                Nessun film trovato!
+                            </div>
+                            <div class = "risultato_ricerca" data-title = "Odissea nello spazio">
+                                <div class = "wrapper">
+                                    <div class = "poster">
+                                        <img src="https://m.media-amazon.com/images/I/71Hl2kh1-tL._AC_UF1000,1000_QL80_.jpg">
+                                    </div>
+                                    <div class = "info">
+                                        <h3>Odissea nello spazio</h3>
+                                        <h4>Kubrik</h4>
+                                        <p>cose strane nello spazio</p>
+                                    </div>
+                                </div>
+                                <div class="cerca_colonna">
+                                    <h5>CERCA LA COLONNA SONORA</h5>
+                                    <span class="material-symbols-outlined">
+                                        expand_more
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lista_risultati_colonna">
+                        </div>
+                    </span>
+                </form>
+                <span class="spacer" id="nav_spacer"></span>
+                <span class="top_menu_element" id="in_cartellone">
+                    IN CARTELLONE
+                </span>
+                <span class="top_menu_element">
+                    WATCHLIST
+                </span>
+                <span class="top_menu_element">
+                    NOTEBOOK
+                </span>
+                <span class="avatar_wrapper">
+                    <div id="avatar"></div>
+                    <div id="blue_dot"></div>
+                </span>
+                <span class="material-symbols-outlined" id="top_menu_icon">
+                    menu
+                </span>
+            </nav>
+            <div class="big_showcase">
+                <p class="big_title">CRYSTAL <br />
+                    FAIRY & THE <br />
+                    MAGICAL <br />
+                    CACTUS <br />
+                </p>
+                <div class="spacer"></div>
+                <p>
+                    DIRETTO DA <strong>SEBASTIAN SILVA</strong><br>
+                    CILE, 2013<br>
+                </p>
+                <footer>
+                    <button class="watch"> 
+                        <span class="material-symbols-outlined">
+                        play_arrow
+                        </span>
+                        GUARDA
+                    </button>
+                    <button class="round_button watchlist" data-clicked="0">
+                        <span class="material-symbols-outlined">
+                            add
+                        </span>
+                    </button>
+                    <p class="film_info_r">
+                    Il film di Sebastian Silva, premiato al Sundance, reinterpreta il racconto classico della gioventu perduta in cerca di un euforia allucinogena attraverso le maestose pianure cilene. Micheal Cera e Gaby Hoffmann sono al contempo irritanti e spassosi nei panni di due turisti con opinioni divergenti.
+                    </p>
+                </footer>
+                <p class="film_info_b">
+                    Il film di Sebastian Silva, premiato al Sundance, reinterpreta il racconto classico della gioventù perduta in cerca di un’euforia allucinogena attraverso le maestose pianure cilene. Micheal Cera e Gaby Hoffmann sono al contempo irritanti e spassosi nei panni di due turisti con opinioni divergenti.
+                    </p>
+            </div>
+        </header>
+        <main class="main">
+        <section class="carousel" id = "continua">
+            <h3>CONTINUA A GUARDARE</h3>
+            <h3 class="vedi">VEDI TUTTO ></h3>
+            <div class="showcase">
+                <div class="poster_wrapper" data-hierarchy="1">
+                    <div class="poster" id="punch_drunk_love">
+                        <img src="p_1.jpg">
+                        <div class="poster_description">
+                            <h2>PUNCH DRUNK LOVE</h2>
+                            <p><strong>PAUL THOMAS ANDERSON</strong> USA 2003</p>
+                        </div>
+                        <div class = "poster_drop">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Barry Egan ha trascorso l’infanzia e l’adolescenza con sette sorelle, le quali non gli hanno mai permesso di vivere una vita tranquilla, né di innamorarsi. Un giorno l’uomo incontra una donna misteriosa, Lena, ma il loro amore è minacciato quando lui cade vittima di un ricattatore.</p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster_wrapper" data-hierarchy="2">
+                    <div class="poster" id="la_notte">
+                        <img src="p_2.jpg">
+                        <div class="poster_description">
+                            <h2>LA NOTTE</h2>
+                            <p><strong>MICHELANGELO ANTONIONI</strong> IT/FR 1961</p>
+                        </div>
+                        <div class = "poster_drop">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>La separazione e riconciliazione di una coppia sono al centro di una metafora sull’alienazione nella società moderna.</p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster_wrapper" data-hierarchy="3">
+                    <div class="poster" id="2046">
+                        <img src="p_3.jpg">
+                        <div class="poster_description">
+                            <h2>2046</h2>
+                            <p><strong>WONG KAR-WAI</strong> 2004</p>
+                        </div>
+                        <div class = "poster_drop" data-showing = "0">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Un altro capolavoro lirico e romantico dell’acclamato regista g Kar-Wai. Un uomo è l’autore di un misterioso romanzo in cui ci si reca al 2046 per trovare i ricordi perduti. Nessuno è mai tornato da questo luogo tranne lui. Una storia che si muove tra passato e presente, tra amore e memoria.
+                                </p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carousel" id = "watchlist">
+            <h3>LA TUA WATCHLIST</h3>
+            <h3 class="vedi">VEDI TUTTO ></h3>
+            <div class="showcase">
+                <div class="poster_wrapper" data-hierarchy="1">
+                    <div class="poster">
+                        <img src="p_1.jpg">
+                        <div class="poster_description">
+                            <h2>PUNCH DRUNK LOVE</h2>
+                            <p><strong>PAUL THOMAS ANDERSON</strong> USA 2003</p>
+                        </div>
+                        <div class = "poster_drop">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Barry Egan ha trascorso l’infanzia e l’adolescenza con sette sorelle, le quali non gli hanno mai permesso di vivere una vita tranquilla, né di innamorarsi. Un giorno l’uomo incontra una donna misteriosa, Lena, ma il loro amore è minacciato quando lui cade vittima di un ricattatore.</p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster_wrapper" data-hierarchy="2">
+                    <div class="poster">
+                        <img src="p_2.jpg">
+                        <div class="poster_description">
+                            <h2>LA NOTTE</h2>
+                            <p><strong>MICHELANGELO ANTONIONI</strong> IT/FR 1961</p>
+                        </div>
+                        <div class = "poster_drop">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>La separazione e riconciliazione di una coppia sono al centro di una metafora sull’alienazione nella società moderna.</p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster_wrapper" data-hierarchy="3">
+                    <div class="poster">
+                        <img src="p_3.jpg">
+                        <div class="poster_description">
+                            <h2>2046</h2>
+                            <p><strong>WONG KAR-WAI</strong> 2004</p>
+                        </div>
+                        <div class = "poster_drop" data-showing = "0">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Un altro capolavoro lirico e romantico dell’acclamato regista g Kar-Wai. Un uomo è l’autore di un misterioso romanzo in cui ci si reca al 2046 per trovare i ricordi perduti. Nessuno è mai tornato da questo luogo tranne lui. Una storia che si muove tra passato e presente, tra amore e memoria.
+                                </p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="carousel" id = "consigli">
+            <h3>CONSIGLIATI PER TE</h3>
+            <h3 class="vedi">VEDI TUTTO ></h3>
+            <div class="showcase">
+                <div class="poster_wrapper" data-hierarchy="1">
+                    <div class="poster">
+                        <img src="p_1.jpg">
+                        <div class="poster_description">
+                            <h2>PUNCH DRUNK LOVE</h2>
+                            <p><strong>PAUL THOMAS ANDERSON</strong> USA 2003</p>
+                        </div>
+                        <div class = "poster_drop">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Barry Egan ha trascorso l’infanzia e l’adolescenza con sette sorelle, le quali non gli hanno mai permesso di vivere una vita tranquilla, né di innamorarsi. Un giorno l’uomo incontra una donna misteriosa, Lena, ma il loro amore è minacciato quando lui cade vittima di un ricattatore.</p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster_wrapper" data-hierarchy="2">
+                    <div class="poster">
+                        <img src="p_2.jpg">
+                        <div class="poster_description">
+                            <h2>LA NOTTE</h2>
+                            <p><strong>MICHELANGELO ANTONIONI</strong> IT/FR 1961</p>
+                        </div>
+                        <div class = "poster_drop">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>La separazione e riconciliazione di una coppia sono al centro di una metafora sull’alienazione nella società moderna.</p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+                <div class="poster_wrapper" data-hierarchy="3">
+                    <div class="poster">
+                        <img src="p_3.jpg">
+                        <div class="poster_description">
+                            <h2>2046</h2>
+                            <p><strong>WONG KAR-WAI</strong> 2004</p>
+                        </div>
+                        <div class = "poster_drop" data-showing = "0">
+                            <div class = "nav_bar">
+                                <button class="watch"> 
+                                    <span class="material-symbols-outlined">
+                                    play_arrow
+                                    </span>
+                                    GUARDA
+                                </button>
+                                <button class="watchlist round_button" data-clicked="0">
+                                    <span class="material-symbols-outlined">
+                                        add
+                                    </span>
+                                </button>
+                                <button class="rate round_button">
+                                    <span class="material-symbols-outlined">
+                                        star
+                                    </span>
+                                </button>
+                            </div>
+                            <div>
+                                <p>Un altro capolavoro lirico e romantico dell’acclamato regista g Kar-Wai. Un uomo è l’autore di un misterioso romanzo in cui ci si reca al 2046 per trovare i ricordi perduti. Nessuno è mai tornato da questo luogo tranne lui. Una storia che si muove tra passato e presente, tra amore e memoria.
+                                </p>
+                            </div>
+                            <footer>
+                                
+                            </footer>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+        <footer>
+            <button id="ancora">
+                ANCORA
+            </button>
+        </footer>
+        <br><br><br><br>
+    </body>
+</html>
